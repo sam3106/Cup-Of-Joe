@@ -1,0 +1,236 @@
+* {
+    box-sizing: border-box;
+    list-style: none;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  .cf:before,
+  .cf:after {
+    content: " ";
+    display: table;
+  }
+  .cf:after {
+    clear: both;
+  }
+  a{
+      text-decoration: none; 
+      color: #8C98A1;
+      cursor: pointer;
+}
+  img {
+    max-width: 100%;
+  }
+  header {
+    background:antiquewhite;
+  }
+  nav ul {
+    display: flex;
+    align-items: center;
+  }
+  .logo {
+    margin: 0 auto;
+  }
+  .logo img {
+    margin-right: 7vw;
+  }
+  #login, .purchase-cart{
+    font-size: 1.4em;
+    margin-right: 1%;
+    
+  }
+  
+
+  .btn-line {
+    width: 35px;
+    height: 3px;
+    margin: 0 0 5px 0;
+    background-color: black;
+    display: none;
+  }
+  .nav-item {
+    margin-right: 20px;
+    font-family: "Roboto Condensed", sans-serif;
+  }
+  .nav-item:last-child {
+    margin: 0;
+  }
+  li{
+    font-family: "Roboto Condensed", sans-serif;
+  }
+.remove{
+  display: none;
+}
+/*                           Login                                 */
+#login-X{
+  position: fixed;
+  top: 10%;
+  right: 5%;
+  font-size: 2.5em;
+  color: #D3D3D3;
+  cursor: pointer;
+}
+#login{
+  cursor: pointer;
+}
+/*                           sign up / sign in                                 */
+.close-sign-up{
+    display: none;
+}
+.close-sign-in{
+    display: none;
+}
+#login-container input[type=text], #login-container input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+#login-container form{
+  border:1px solid #ccc;
+  background: antiquewhite;
+}
+#login-container input[type=text]:focus, #login-container input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+#login-container hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+/* Set a style for all buttons */
+#login-container button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin:0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+#login-container button:hover {
+  opacity:1;
+}
+#login-container .sign-in-btn {
+  padding: 14px 20px;
+  background-color: #f44336;
+}
+#login-container .sign-in-btn, #login-container .signupbtn {
+float: left;
+width: 100%;
+}
+#login-wrapper{
+  height: 100%;
+  position: fixed;
+  width: 100%;
+  background:#0b0b0b;
+  opacity: .5;
+}
+#login-container {
+width: 50%;
+position: fixed;
+top: 25%;
+left: 25%;
+right: 25%;
+bottom:25%;
+}
+
+
+@media screen and (max-width: 300px) {
+  #login-wrapper .sign-in-btn, #login-container .signupbtn {
+     width: 100%;
+  }
+}
+  /*           Media Qurrey            */
+
+  @media only screen and (min-width: 769px) {
+    #hidden-nav-wrapper{
+      display: none;
+    }
+ }
+ @media only screen and (max-width: 768px) {
+   #hidden-nav-wrapper{
+       height: 100%;
+       position: fixed;
+       width: 100%;
+   }
+   .active{
+     background: #55557F;
+   }
+ .menu-X-button{
+   transform: rotate(180deg); }
+ .menu-X-button:nth-child(1){transform: rotate(45deg) translate(5px, 5px);}
+ .menu-X-button:nth-child(2){opacity: 0;}
+ .menu-X-button:nth-child(3){ transform: rotate(-45deg) translate(7px, -6px);}
+ .menu-button-right{ position: absolute; top: 4%;}
+   #menu-btn{
+     margin:0 auto 0 0;
+   }
+   .btn-line {
+     display: block;
+   }
+ 
+   .nav-item {
+     display: none;
+   }
+  .menu-nav{
+   justify-content: flex-end;
+   }
+   .logo img {
+       margin: 0;
+     }
+   #hidden-nav{
+     height: 100%;
+     float: left;
+     width: 30%;
+     background:antiquewhite;
+   }
+   #hidden-nav ul{
+     padding: 20vh 0;
+     text-align: center;
+   }
+   #hidden-nav li{
+     padding: 2vh 0;
+     border-top: 1px solid white;
+     font-size: 1.4em;
+   }
+     #hidden-nav-background{
+       height: 100%;
+       width: 70%;
+       float: left;
+       background:#0b0b0b;
+       opacity: .5;
+     }
+   }
+   @media only screen and (max-width: 768px) {
+    .logo img{ height: 70px}
+   }
+ @media only screen and (max-width: 580px) {
+   #login, .purchase-cart{ font-size:1em;}
+   .logo img{height: 75px; }
+   #login-container {
+    width: 70%;
+    position: fixed;
+    top: 20%;
+    left: 15%;
+    right: 15%;
+    bottom: 20%;
+ }
+ #login-X {
+  top: 12%;
+ }
+ @media only screen and (max-width: 420px) {
+  #login{margin-right: 1%;}
+ .logo img{height: 45px; }
+ #hidden-nav li{font-size: 1em;}
+ #login, .purchase-cart{ font-size:.8em;}
+ }
+  
+
+  
